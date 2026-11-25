@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+.texto/
+.actividad/
+recursos/privado/

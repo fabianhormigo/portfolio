@@ -1,0 +1,77 @@
+Herramientas descubiertas (13): biblioteca_listar, biblioteca_leer, biblioteca_buscar, biblioteca_consultar, biblioteca_indexar, proyectos_listar, proyectos_arbol, proyectos_leer, proyectos_buscar, proyectos_git, incertidumbre_propagar, incertidumbre_estimar_malla, incertidumbre_validar
+
+>>> Indexar la documentación
+[biblioteca_indexar]
+{
+  "extraidos": [],
+  "al_dia": 2,
+  "borrados": 0,
+  "errores": {}
+}
+
+>>> ¿Cada cuánto se calibra el sensor?
+[biblioteca_consultar]
+[1] ejemplo/mantenimiento.md · línea 1  (coinciden: cada, calibra, sensor)
+# Manual de mantenimiento del sensor (documento ficticio) ## Calibración El sensor de inclinación se calibra cada doce meses o después de un golpe. Se registra la deriva respecto a la calibración anterior. ## Almacenamiento Guardar el equipo entre 5 y 35 grados, en su maleta y sin carga completa durante periodos largos.
+
+>>> Incertidumbre de un área a·b (GUM y Monte Carlo)
+[incertidumbre_propagar]
+{
+  "modelo": "a*b",
+  "p": 0.95,
+  "gum": {
+    "y": 9.9375,
+    "u": 0.0459184,
+    "k": 1.96,
+    "U": 0.0899984,
+    "nu_eff": "inf",
+    "contribuciones": {
+      "a": {
+        "c": 2.65,
+        "u_y": 0.0265,
+        "porcentaje": 33.3
+      },
+      "b": {
+        "c": 3.75,
+        "u_y": 0.0375,
+        "porcentaje": 66.7
+      }
+    },
+    "nota": ""
+  },
+  "monte_carlo": {
+    "y": 9.93754,
+    "u": 0.0458817,
+    "intervalo": [
+      9.84661,
+      10.0264
+    ],
+    "M": 920000,
+    "estabilizado": true,
+    "delta": 0.0005,
+    "histograma": {
+      "cuentas": [
+        1,
+        2,
+        2,
+        6,
+        9,
+        32,
+        39,
+        81,
+        151,
+        271,
+        472,
+        755,
+        1141,
+        1907,
+        2843,
+        4081,
+        6040,
+        8232,
+        11220,
+        14964,
+        19388,
+        24332,
+        30207,
+        35345

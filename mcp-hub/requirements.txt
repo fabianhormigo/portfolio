@@ -1,0 +1,5 @@
+mcp[cli]>=1.9,<2
+numpy>=2,<3          # incertidumbre: Monte Carlo (JCGM 101)
+pypdf>=5,<8          # biblioteca_indexar: texto de los PDF
+networkx>=3.3,<4     # solo el panel
+pytest>=8,<9

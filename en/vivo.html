@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Live · Fabián Hormigo</title><link rel="stylesheet" href="../estilos.css">
+<link rel="alternate" hreflang="es" href="../vivo.html"></head><body>
+<header class="cab"><div class="env"><a class="logo" href="index.html">Fabián Hormigo<small>AI engineer</small></a><nav><a class="directo" href="vivo.html">▶ Live</a><a href="rag.html">Cited answers</a><a href="mcp.html">Tools for agents</a><a href="chat.html">Chat over data</a><a href="automatizacion.html">Reliable automation</a><a class="idioma" href="../vivo.html">Español</a></nav></div></header>
+<main><div class="env ficha"><span class="etq">Runnable demos</span><h1>Run it and watch <em>every step</em></h1>
+<p class="lead">Search, model, tools and validation, in plain sight. Start it in your browser or run it on your machine with Ollama; otherwise real runs are replayed.</p>
+<div id="vivo" data-base="../"></div>
+<h2 id="arrancar" style="margin-top:44px">How to run it live</h2><div class="arq"><div><b>Ollama</b>Local models: qwen2.5, llama3.1 and nomic-embed-text.</div><div><b>RAG</b>ChromaDB and BM25 with version filter and validated quote.</div><div><b>Agent + MCP</b>The model picks tools from a real MCP server.</div><div><b>Local server</b>Plain Python; only listens on your machine.</div></div>
+<pre class="orden">git clone https://github.com/fabianhormigo/ai-portfolio
+cd ai-portfolio
+pip install -r requirements.txt
+ollama pull qwen2.5:7b-instruct
+ollama pull nomic-embed-text
+python vivo/servidor.py</pre>
+<p class="limite">Then open http://127.0.0.1:8800/en/vivo.html. Small models make mistakes: that is why every answer shows its source and what was validated.</p></div></main>
+<footer><div class="env"><span><a href="https://github.com/fabianhormigo">github.com/fabianhormigo</a></span><span>Built with AI assistance</span></div></footer>
+<script src="../app.js"></script><script src="../navegador.js"></script><script src="../vivo.js"></script></body></html>

@@ -1,0 +1,51 @@
+[
+  {
+    "pregunta": "¿Qué sector tiene menos competencia?",
+    "respuesta": "El sector con menos competencia media es \"Laboratorio\" con 2.3 licitadores por adjudicación.",
+    "accion": {
+      "tipo": "chart",
+      "chart": "bar",
+      "dataset": "por_sector",
+      "medida": "competencia_media",
+      "titulo": "Competencia media por sector"
+    },
+    "segundos": 3.4
+  },
+  {
+    "pregunta": "¿Dónde hay más oferta única?",
+    "respuesta": "El sector con mayor porcentaje de oferta única es el Laboratorio, con un 56.4%. Puedo mostrar esto en un gráfico.",
+    "accion": {
+      "tipo": "chart",
+      "chart": "hbar",
+      "dataset": "por_sector",
+      "medida": "pct_oferta_unica",
+      "titulo": "Porcentaje de oferta única por sector"
+    },
+    "segundos": 3.6
+  },
+  {
+    "pregunta": "Gráfico de volumen por año",
+    "respuesta": "(sin texto)",
+    "accion": {
+      "tipo": "chart",
+      "chart": "bar",
+      "dataset": "por_anio",
+      "medida": "volumen",
+      "titulo": "Volumen de licitaciones por año"
+    },
+    "segundos": 2.9
+  },
+  {
+    "pregunta": "Filtra a Construccion/Obra civil desde 2020",
+    "respuesta": "(sin texto)",
+    "accion": {
+      "tipo": "filter",
+      "anio_min": 2020,
+      "sectores": [
+        "Construccion/Obra civil"
+      ],
+      "region": "(todas)"
+    },
+    "segundos": 3.6
+  }
+]
