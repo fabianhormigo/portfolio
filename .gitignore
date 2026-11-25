@@ -7,3 +7,6 @@ __pycache__/
 .agente_lab/
 .claude/
 .env
+agente/indice/
+agente/pdf/
+agente/resultados/parcial.jsonl

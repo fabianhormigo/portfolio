@@ -1,0 +1,22 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agente investigador · Fabián Hormigo</title><link rel="stylesheet" href="estilos.css">
+<link rel="alternate" hreflang="en" href="en/agente.html"></head><body>
+<header class="cab"><div class="env"><a class="logo" href="index.html">Fabián Hormigo<small>AI engineer</small></a><nav><a class="directo" href="agente.html" aria-current=page>★ Agente investigador</a><a href="calidad.html">Calidad</a><a href="vivo.html">▶ En vivo</a><a href="rag.html">Respuestas con cita</a><a href="mcp.html">Herramientas para agentes</a><a href="chat.html">Chat sobre datos</a><a href="automatizacion.html">Automatización fiable</a><a class="idioma" href="en/agente.html">English</a></nav></div></header>
+<main><div class="env ficha"><span class="etq">Proyecto destacado · agentes e ingeniería de contexto</span>
+<h1>Un agente que investiga normativa <em>sin llenar la memoria</em></h1>
+<p class="lead">Pregunta sobre 7 normas oficiales. El agente lee por partes, se queda con las pruebas y olvida el resto. Mira la ventana del modelo mientras trabaja y abre cada cita en el documento original.</p>
+<div class="kpis"><div><b>736</b><span>tokens como máximo en una llamada, de 4096 (volcado: 3703)</span></div><div><b>4/8</b><span>aciertos en reservadas (RAG simple 4, volcado 6)</span></div><div><b>12/15</b><span>en desarrollo (RAG simple 10, volcado 10)</span></div><div><b>98</b><span>tests automáticos</span></div></div>
+<div id="investigador" data-base=""></div>
+<div class="cierre"><a class="btn" href="calidad.html">Cómo está medido y probado →</a><a class="btn hueco" href="https://github.com/fabianhormigo/portfolio/tree/main/agente">Código y documentación</a></div>
+<h2 style="margin-top:44px">Cómo funciona</h2><div class="arq"><div><b>1. Planifica</b>Reescribe la pregunta en el lenguaje de la norma.</div><div><b>2. Busca</b>Híbrida: palabras y vectores, solo en el sector.</div><div><b>3. Lee aislado</b>Un fragmento por llamada. Nada se acumula.</div><div><b>4. Anota</b>Solo sobrevive una cita literal, comprobada por código.</div><div><b>5. Responde</b>Solo desde las notas, con artículo y página.</div></div>
+<h2 id="arrancar" style="margin-top:44px">Cómo ejecutarlo en vivo</h2>
+<pre class="orden">git clone https://github.com/fabianhormigo/portfolio
+cd portfolio
+pip install -r requirements.txt
+ollama pull qwen2.5:7b-instruct
+ollama pull nomic-embed-text
+python agente/ingesta.py
+python vivo/servidor.py</pre>
+<h3>Fuentes oficiales</h3><ul><li><a href="https://www.boe.es/buscar/pdf/2017/BOE-A-2017-12902-consolidado.pdf" target="_blank" rel="noopener">Ley 9/2017 de Contratos del Sector Público</a></li><li><a href="https://www.boe.es/buscar/pdf/1995/BOE-A-1995-24292-consolidado.pdf" target="_blank" rel="noopener">Ley 31/1995 de Prevención de Riesgos Laborales</a></li><li><a href="https://www.boe.es/buscar/pdf/2019/BOE-A-2019-5089-consolidado.pdf" target="_blank" rel="noopener">Real Decreto 244/2019 de autoconsumo</a></li><li><a href="https://www.boe.es/buscar/pdf/2003/BOE-A-2003-20976-consolidado.pdf" target="_blank" rel="noopener">Ley 37/2003 del Ruido</a></li><li><a href="https://www.boe.es/doue/2024/1689/L00001-00144.pdf" target="_blank" rel="noopener">Reglamento (UE) 2024/1689 de Inteligencia Artificial</a></li><li><a href="https://www.boe.es/doue/2016/119/L00001-00088.pdf" target="_blank" rel="noopener">Reglamento (UE) 2016/679 General de Protección de Datos</a></li><li><a href="https://www.codigotecnico.org/pdf/Documentos/HR/DBHR.pdf" target="_blank" rel="noopener">CTE DB-HR Protección frente al ruido</a></li></ul></div></main>
+<footer><div class="env"><span><a href="https://github.com/fabianhormigo">github.com/fabianhormigo</a></span><span>Desarrollo asistido con IA</span></div></footer>
+<script src="app.js"></script><script src="navegador.js"></script><script src="vivo.js"></script><script src="agente.js"></script></body></html>

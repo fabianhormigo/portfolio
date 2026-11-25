@@ -8,12 +8,18 @@ Resuelvo problemas con IA y automatización, y compruebo que funcionan.
 
 | Problema | Solución | Código |
 |---|---|---|
+| Un modelo pequeño no puede leer una ley entera | **Agente investigador** con ingeniería de contexto sobre 7 normas oficiales | [`agente`](agente) |
 | La IA responde desde la versión equivocada | RAG con filtro, cita literal y evaluación | [`rag-real`](rag-real) |
 | El modelo adivina cuando debería calcular | Servidor MCP con herramientas probadas | [`mcp-hub`](mcp-hub) |
 | Nadie puede preguntar a los datos | Chat con cifras calculadas y acciones validadas | [`chat-analista`](chat-analista) |
 | Integraciones con duplicados y fallos silenciosos | ETL idempotente con reintentos | [`etl-idempotente`](etl-idempotente) |
 
 Desarrollo asistido con IA.
+
+## Calidad
+[![tests](https://github.com/fabianhormigo/portfolio/actions/workflows/tests.yml/badge.svg)](https://github.com/fabianhormigo/portfolio/actions)
+
+[Evaluación del agente](agente/docs/EVALUACION.md) · [Decisiones y fallos](agente/docs/DECISIONES.md) · [Pruebas](docs/PRUEBAS.md) · `python pruebas.py`
 
 ## Ejecutarlo en el navegador
 

@@ -1,0 +1,103 @@
+{
+ "total": 98,
+ "proyectos": [
+  {
+   "proyecto": "agente",
+   "pasan": 48,
+   "saltados": 0,
+   "ficheros": [
+    {
+     "nombre": "agente/test_agente.py",
+     "que": "Tests sin modelos ni PDF: troceado, verificación de citas, candidatos y validación de la respuesta."
+    },
+    {
+     "nombre": "agente/test_evaluar.py",
+     "que": "La evaluación y la ingesta con dobles de prueba: sin modelos ni PDF."
+    },
+    {
+     "nombre": "agente/test_flujo.py",
+     "que": "El agente de principio a fin con un modelo simulado, y la búsqueda con un índice pequeño en disco."
+    },
+    {
+     "nombre": "agente/test_integracion.py",
+     "que": "Integración con el índice real (normas descargadas). Se salta si no se ha ejecutado ingesta.py."
+    },
+    {
+     "nombre": "agente/test_metricas.py",
+     "que": "Tests de las métricas y del informe, con casos de resultado conocido."
+    }
+   ]
+  },
+  {
+   "proyecto": "vivo",
+   "pasan": 11,
+   "saltados": 0,
+   "ficheros": [
+    {
+     "nombre": "vivo/test_servidor.py",
+     "que": "Seguridad y contrato del servidor local, sin modelos: se levanta en un puerto libre."
+    }
+   ]
+  },
+  {
+   "proyecto": "rag-real",
+   "pasan": 9,
+   "saltados": 0,
+   "ficheros": [
+    {
+     "nombre": "rag-real/test_rag.py",
+     "que": "Tests sin modelos: corpus coherente, fusión, validación de citas y corrección de respuestas."
+    }
+   ]
+  },
+  {
+   "proyecto": "mcp-hub",
+   "pasan": 18,
+   "saltados": 0,
+   "ficheros": [
+    {
+     "nombre": "mcp-hub/tests/test_conocimiento.py",
+     "que": "RAG pequeño (capa 2): con textos inventados."
+    },
+    {
+     "nombre": "mcp-hub/tests/test_incertidumbre.py",
+     "que": "Motor de incertidumbre (motores/nucleo_mcp/incertidumbre.py) frente a casos con solución exacta."
+    },
+    {
+     "nombre": "mcp-hub/tests/test_notacion.py",
+     "que": "La notación del MCP se cumple (ver NOTACION.md). Ejecutar: .venv\\Scripts\\python.exe tests\\test_notacion.py"
+    }
+   ]
+  },
+  {
+   "proyecto": "chat-analista",
+   "pasan": 5,
+   "saltados": 0,
+   "ficheros": [
+    {
+     "nombre": "chat-analista/test_chat.py",
+     "que": ""
+    }
+   ]
+  },
+  {
+   "proyecto": "etl-idempotente",
+   "pasan": 7,
+   "saltados": 0,
+   "ficheros": [
+    {
+     "nombre": "etl-idempotente/test_crm_etl.py",
+     "que": ""
+    }
+   ]
+  }
+ ],
+ "cobertura_agente": {
+  "agente.py": "97%",
+  "evaluar.py": "65%",
+  "informe.py": "97%",
+  "ingesta.py": "72%",
+  "metricas.py": "98%",
+  "TOTAL": "86%"
+ }
+}

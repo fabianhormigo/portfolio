@@ -1,0 +1,16 @@
+[
+  {"id": "lcsp", "sector": "contratacion", "titulo": "Ley 9/2017 de Contratos del Sector Público", "corto": "Ley 9/2017", "estilo": "articulos",
+   "url": "https://www.boe.es/buscar/pdf/2017/BOE-A-2017-12902-consolidado.pdf"},
+  {"id": "prl", "sector": "prevencion", "titulo": "Ley 31/1995 de Prevención de Riesgos Laborales", "corto": "Ley 31/1995", "estilo": "articulos",
+   "url": "https://www.boe.es/buscar/pdf/1995/BOE-A-1995-24292-consolidado.pdf"},
+  {"id": "autoconsumo", "sector": "energia", "titulo": "Real Decreto 244/2019 de autoconsumo", "corto": "RD 244/2019", "estilo": "articulos",
+   "url": "https://www.boe.es/buscar/pdf/2019/BOE-A-2019-5089-consolidado.pdf"},
+  {"id": "ruido", "sector": "ambiente", "titulo": "Ley 37/2003 del Ruido", "corto": "Ley 37/2003", "estilo": "articulos",
+   "url": "https://www.boe.es/buscar/pdf/2003/BOE-A-2003-20976-consolidado.pdf"},
+  {"id": "ia", "sector": "ia", "titulo": "Reglamento (UE) 2024/1689 de Inteligencia Artificial", "corto": "Reglamento de IA", "estilo": "articulos",
+   "url": "https://www.boe.es/doue/2024/1689/L00001-00144.pdf"},
+  {"id": "rgpd", "sector": "datos", "titulo": "Reglamento (UE) 2016/679 General de Protección de Datos", "corto": "RGPD", "estilo": "articulos",
+   "url": "https://www.boe.es/doue/2016/119/L00001-00088.pdf"},
+  {"id": "dbhr", "sector": "edificacion", "titulo": "CTE DB-HR Protección frente al ruido", "corto": "DB-HR", "estilo": "apartados",
+   "url": "https://www.codigotecnico.org/pdf/Documentos/HR/DBHR.pdf"}
+]

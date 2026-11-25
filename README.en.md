@@ -8,12 +8,18 @@ I solve problems with AI and automation, and prove it works.
 
 | Problem | Solution | Code |
 |---|---|---|
+| A small model cannot read a whole law | **Research agent** with context engineering over 7 official laws | [`agente`](agente) |
 | AI answers from the wrong document version | RAG with filtering, verbatim quotes and evaluation | [`rag-real`](rag-real) |
 | The model guesses when it should compute | MCP server with tested tools | [`mcp-hub`](mcp-hub) |
 | Nobody can question the data | Chat with precomputed figures and validated actions | [`chat-analista`](chat-analista) |
 | Integrations with duplicates and silent failures | Idempotent ETL with retries | [`etl-idempotente`](etl-idempotente) |
 
 Built with AI assistance. Code and project docs are mostly in Spanish.
+
+## Quality
+[![tests](https://github.com/fabianhormigo/portfolio/actions/workflows/tests.yml/badge.svg)](https://github.com/fabianhormigo/portfolio/actions)
+
+[Agent evaluation](agente/docs/EVALUATION.md) · [Design decisions (Spanish)](agente/docs/DECISIONES.md) · [Tests (Spanish)](docs/PRUEBAS.md) · `python pruebas.py`
 
 ## Run it in the browser
 

@@ -1,0 +1,9 @@
+{
+  "huella": "c2e46f523ef91335",
+  "revisado": "Todas las respuestas dadas por correctas con respuesta en la norma, en los tres métodos.",
+  "descartados": [
+    {"n": 2, "modo": "agente",
+     "motivo": "Da el plazo para aprobar la certificación (30 días desde la entrega), no el de pago (30 días desde la aprobación). La cifra coincide por casualidad y el patrón la dio por buena.",
+     "motivo_en": "It gives the deadline to approve the certificate (30 days from delivery), not the payment deadline (30 days from approval). The number matches by chance and the pattern accepted it."}
+  ]
+}

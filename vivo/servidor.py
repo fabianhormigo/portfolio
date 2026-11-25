@@ -19,7 +19,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
-sys.path[:0] = [str(RAIZ / "rag-real"), str(RAIZ / "chat-analista")]
+sys.path[:0] = [str(RAIZ / "rag-real"), str(RAIZ / "chat-analista"), str(RAIZ / "agente")]
 
 import chat  # noqa: E402
 import rag as R  # noqa: E402
@@ -237,7 +237,18 @@ def demo_datos(q: dict) -> Iterator[dict]:
     yield {"paso": "respuesta", "texto": r["respuesta"], "accion": a, "grafico": grafico}
 
 
-DEMOS = {"rag": demo_rag, "agente": demo_agente, "datos": demo_datos}
+# ───────────────────────── 4 · agente investigador sobre normativa oficial
+_indice = None
+
+
+def demo_investigar(q: dict) -> Iterator[dict]:
+    global _indice
+    import agente   # se importa al usarlo: necesita el índice creado con agente/ingesta.py
+    _indice = _indice or agente.Indice()
+    yield from agente.investigar(_indice, str(q["pregunta"])[:500], str(q["sector"]), q["modelo"], str(q.get("idioma", "es")))
+
+
+DEMOS = {"rag": demo_rag, "agente": demo_agente, "datos": demo_datos, "investigar": demo_investigar}
 
 
 def ejecutar(nombre: str, q: dict) -> Iterator[dict]:
