@@ -1,12 +1,24 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI engineer · Fabián Hormigo</title><link rel="stylesheet" href="../estilos.css">
-<link rel="alternate" hreflang="es" href="../index.html"></head><body>
-<header class="cab"><div class="env"><a class="logo" href="index.html">Fabián Hormigo<small>AI engineer</small></a><nav><a class="directo" href="agente.html">★ Research agent</a><a href="calidad.html">Quality</a><a href="vivo.html">▶ Live</a><a href="rag.html">Cited answers</a><a href="mcp.html">Tools for agents</a><a href="chat.html">Chat over data</a><a href="automatizacion.html">Reliable automation</a><a class="idioma" href="../index.html">Español</a></nav></div></header>
-<main><section class="portada"><div class="env dos"><div><span class="etq">Applied AI and automation</span>
-<h1>I solve problems with AI and <em>prove</em> it works.</h1>
-<p class="lead">I'm a physicist. I build assistants that cite sources, tools for agents and automations that don't fail silently.</p>
-<a class="btn" href="agente.html">★ Watch the agent work</a><a class="btn hueco" href="vivo.html">▶ More demos</a><a class="btn hueco" href="#problemas">Pick your problem</a></div><div class="consola" id="hero" data-base="../"></div></div></section>
-<section class="sec" id="problemas"><div class="env"><span class="etq">Where to start</span><h2>Which of these problems do you have?</h2><a class="rama destacada" href="agente.html"><span class="etq">Featured project</span><h3>Regulation research agent</h3><p>Context-engineered agent over 7 official laws: article-and-page citations, per-stage metrics, tests and documentation.</p><span class="ir">See the agent and its evaluation →</span></a><div class="ramas"><a class="rama" href="rag.html"><span class="etq">If you lose time searching documents</span><h3>Cited answers</h3><p>Every answer can be audited: which fragment it came from and what was tested.</p><b>95%</b><small>correct fragment in the top 3</small><span class="ir">See problem and solution →</span></a><a class="rama" href="mcp.html"><span class="etq">If your AI guesses when it should compute</span><h3>Tools for agents</h3><p>Answers rest on tested code and every call is logged.</p><b>13</b><small>published tools</small><span class="ir">See problem and solution →</span></a><a class="rama" href="chat.html"><span class="etq">If nobody can question your data</span><h3>Chat over data</h3><p>You ask it like an analyst, and the chart comes from the data, not the model.</p><b>479,498</b><small>tenders</small><span class="ir">See problem and solution →</span></a><a class="rama" href="automatizacion.html"><span class="etq">If manual repetitive work lets errors in</span><h3>Reliable automation</h3><p>The process can be re-run safely and errors are visible.</p><b>7</b><small>flow tests</small><span class="ir">See problem and solution →</span></a></div></div></section>
-<section class="sec azul"><div class="env"><span class="etq">How I work</span><h2>From problem to something that works</h2><ol class="pasos"><li><h3>Understand</h3><p>What decision is needed and what can go wrong.</p></li><li><h3>Automate</h3><p>The repeatable part, with deterministic code and tests.</p></li><li><h3>Apply AI</h3><p>Only where it helps: searching, writing, choosing tools.</p></li><li><h3>Verify</h3><p>Measure and leave the decision to a person.</p></li></ol></div></section></main>
-<footer><div class="env"><span><a href="https://github.com/fabianhormigo">github.com/fabianhormigo</a></span><span>Built with AI assistance</span></div></footer>
-<script src="../app.js"></script><script src="../navegador.js"></script><script src="../vivo.js"></script><script src="../agente.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fabián Hormigo · AI engineer</title>
+<meta name="description" content="AI and data products you can use and verify: a regulation agent, a procurement dashboard and more.">
+<link rel="stylesheet" href="../portfolio.css">
+</head>
+<body data-base="../">
+<header class="marca"><div class="env"><a class="nombre" href="#inicio">Fabián Hormigo<small>AI engineer · physicist</small></a><nav aria-label="Sections"><a href="#inicio" data-t="inicio">Home</a><a href="#agente" data-t="agente">Agent</a><a href="#licitaciones" data-t="licitaciones">Procurement</a><a href="#datos" data-t="datos">Data checker</a><a href="#herramientas" data-t="herramientas">MCP tools</a><a href="#calidad" data-t="calidad">Quality</a><a id="idioma" href="../index.html" hreflang="es">ES</a></nav></div></header>
+<main><section id="p-inicio" hidden></section><section id="p-agente" hidden></section><section id="p-licitaciones" hidden></section><section id="p-datos" hidden></section><section id="p-herramientas" hidden></section><section id="p-calidad" hidden></section><noscript>This site needs JavaScript.</noscript></main>
+<footer><div class="env">
+<div><b>About me</b>Physicist working on applied AI, data, simulation and automation. Built with AI assistance.<br><a href="https://github.com/fabianhormigo">github.com/fabianhormigo</a></div>
+<div id="arrancar"><b>Run it on your machine, with Ollama</b><pre class="orden">git clone https://github.com/fabianhormigo/portfolio
+cd portfolio
+pip install -r requirements.txt
+ollama pull qwen2.5:7b-instruct
+ollama pull nomic-embed-text
+python agente/ingesta.py
+python vivo/servidor.py</pre></div>
+</div></footer>
+<script src="../graficos.js"></script><script src="../portfolio.js"></script>
+</body>
+</html>

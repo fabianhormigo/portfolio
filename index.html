@@ -1,12 +1,24 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI engineer · Fabián Hormigo</title><link rel="stylesheet" href="estilos.css">
-<link rel="alternate" hreflang="en" href="en/index.html"></head><body>
-<header class="cab"><div class="env"><a class="logo" href="index.html">Fabián Hormigo<small>AI engineer</small></a><nav><a class="directo" href="agente.html">★ Agente investigador</a><a href="calidad.html">Calidad</a><a href="vivo.html">▶ En vivo</a><a href="rag.html">Respuestas con cita</a><a href="mcp.html">Herramientas para agentes</a><a href="chat.html">Chat sobre datos</a><a href="automatizacion.html">Automatización fiable</a><a class="idioma" href="en/index.html">English</a></nav></div></header>
-<main><section class="portada"><div class="env dos"><div><span class="etq">IA aplicada y automatización</span>
-<h1>Resuelvo problemas con IA y <em>compruebo</em> que funcionan.</h1>
-<p class="lead">Soy físico. Construyo asistentes que citan sus fuentes, herramientas para agentes y automatizaciones que no fallan en silencio.</p>
-<a class="btn" href="agente.html">★ Ver el agente trabajar</a><a class="btn hueco" href="vivo.html">▶ Más demos</a><a class="btn hueco" href="#problemas">Elige tu problema</a></div><div class="consola" id="hero" data-base=""></div></div></section>
-<section class="sec" id="problemas"><div class="env"><span class="etq">Por dónde empezar</span><h2>¿Cuál de estos problemas tienes?</h2><a class="rama destacada" href="agente.html"><span class="etq">Proyecto destacado</span><h3>Agente investigador de normativa</h3><p>Agente con ingeniería de contexto sobre 7 normas oficiales: citas con artículo y página, métricas por etapa, tests y documentación.</p><span class="ir">Ver el agente y su evaluación →</span></a><div class="ramas"><a class="rama" href="rag.html"><span class="etq">Si pierdes tiempo buscando en documentos</span><h3>Respuestas con cita</h3><p>Se puede auditar cada respuesta: de qué fragmento sale y qué se probó.</p><b>95 %</b><small>fragmento correcto entre los 3 primeros</small><span class="ir">Ver el problema y la solución →</span></a><a class="rama" href="mcp.html"><span class="etq">Si tu IA adivina cuando debería calcular</span><h3>Herramientas para agentes</h3><p>La respuesta se apoya en código probado y queda registro de cada llamada.</p><b>13</b><small>herramientas publicadas</small><span class="ir">Ver el problema y la solución →</span></a><a class="rama" href="chat.html"><span class="etq">Si nadie puede preguntar a tus datos</span><h3>Chat sobre datos</h3><p>Se pregunta como a un analista y el gráfico sale de los datos, no del modelo.</p><b>479 498</b><small>licitaciones</small><span class="ir">Ver el problema y la solución →</span></a><a class="rama" href="automatizacion.html"><span class="etq">Si repites tareas a mano y se cuelan errores</span><h3>Automatización fiable</h3><p>El proceso se puede relanzar sin miedo y los errores se ven.</p><b>7</b><small>tests del flujo</small><span class="ir">Ver el problema y la solución →</span></a></div></div></section>
-<section class="sec azul"><div class="env"><span class="etq">Cómo trabajo</span><h2>Del problema a algo que funciona</h2><ol class="pasos"><li><h3>Entender</h3><p>Qué decisión hay que tomar y qué puede salir mal.</p></li><li><h3>Automatizar</h3><p>Lo repetible, con código determinista y pruebas.</p></li><li><h3>Aplicar IA</h3><p>Solo donde aporta: buscar, redactar, elegir herramientas.</p></li><li><h3>Comprobar</h3><p>Medir y dejar la decisión a una persona.</p></li></ol></div></section></main>
-<footer><div class="env"><span><a href="https://github.com/fabianhormigo">github.com/fabianhormigo</a></span><span>Desarrollo asistido con IA</span></div></footer>
-<script src="app.js"></script><script src="navegador.js"></script><script src="vivo.js"></script><script src="agente.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fabián Hormigo · AI engineer</title>
+<meta name="description" content="Productos de IA y datos que se pueden usar y comprobar: agente de normativa, panel de contratación pública y más.">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body data-base="">
+<header class="marca"><div class="env"><a class="nombre" href="#inicio">Fabián Hormigo<small>AI engineer · físico</small></a><nav aria-label="Secciones"><a href="#inicio" data-t="inicio">Inicio</a><a href="#agente" data-t="agente">Agente</a><a href="#licitaciones" data-t="licitaciones">Licitaciones</a><a href="#datos" data-t="datos">Revisor de datos</a><a href="#herramientas" data-t="herramientas">Herramientas MCP</a><a href="#calidad" data-t="calidad">Calidad</a><a id="idioma" href="en/index.html" hreflang="en">EN</a></nav></div></header>
+<main><section id="p-inicio" hidden></section><section id="p-agente" hidden></section><section id="p-licitaciones" hidden></section><section id="p-datos" hidden></section><section id="p-herramientas" hidden></section><section id="p-calidad" hidden></section><noscript>Esta web necesita JavaScript.</noscript></main>
+<footer><div class="env">
+<div><b>Sobre mí</b>Físico. Trabajo en IA aplicada, datos, simulación y automatización. Desarrollo asistido con IA.<br><a href="https://github.com/fabianhormigo">github.com/fabianhormigo</a></div>
+<div id="arrancar"><b>Ejecutarlo en tu equipo, con Ollama</b><pre class="orden">git clone https://github.com/fabianhormigo/portfolio
+cd portfolio
+pip install -r requirements.txt
+ollama pull qwen2.5:7b-instruct
+ollama pull nomic-embed-text
+python agente/ingesta.py
+python vivo/servidor.py</pre></div>
+</div></footer>
+<script src="graficos.js"></script><script src="portfolio.js"></script>
+</body>
+</html>

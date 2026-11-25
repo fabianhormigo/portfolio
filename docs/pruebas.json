@@ -1,5 +1,5 @@
 {
- "total": 98,
+ "total": 116,
  "proyectos": [
   {
    "proyecto": "agente",
@@ -30,12 +30,16 @@
   },
   {
    "proyecto": "vivo",
-   "pasan": 11,
+   "pasan": 29,
    "saltados": 0,
    "ficheros": [
     {
      "nombre": "vivo/test_servidor.py",
      "que": "Seguridad y contrato del servidor local, sin modelos: se levanta en un puerto libre."
+    },
+    {
+     "nombre": "vivo/test_web.py",
+     "que": "La web no tiene enlaces rotos: recursos locales, datos que se cargan, pestañas y redirecciones antiguas."
     }
    ]
   },

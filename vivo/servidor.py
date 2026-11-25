@@ -1,6 +1,6 @@
 """Portafolio en vivo: sirve la web y conecta las demos con modelos de Ollama en este equipo.
 
-    python vivo/servidor.py            -> http://127.0.0.1:8800/vivo.html
+    python vivo/servidor.py            -> http://127.0.0.1:8800/
     python vivo/servidor.py --grabar   -> guarda ejecuciones reales para reproducirlas en la web pública
 
 Solo escucha en 127.0.0.1. Variable MCP_PYTHON: intérprete con el paquete `mcp` (por defecto, el actual).
@@ -355,7 +355,7 @@ def main() -> None:
     if a.grabar:
         return grabar()
     srv = ThreadingHTTPServer(("127.0.0.1", a.puerto), Web)
-    print(f"Portafolio en vivo: http://127.0.0.1:{a.puerto}/vivo.html   (modelos: {', '.join(instalados()) or 'Ollama no responde'})")
+    print(f"Portafolio en vivo: http://127.0.0.1:{a.puerto}/index.html   (modelos: {', '.join(instalados()) or 'Ollama no responde'})")
     srv.serve_forever()
 
 

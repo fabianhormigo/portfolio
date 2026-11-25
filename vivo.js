@@ -5,7 +5,7 @@ if (!raiz && !hero) return;
 const EN = document.documentElement.lang === "en", T = (es, en) => EN ? en : es;
 const base = (raiz || hero).dataset.base;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
-const limpio = s => String(s).replace(/\times/g, "×").replace(/\\text\{([^}]*)\}/g, "$1").replace(/\\[()\[\]]/g, "").replace(/\\,/g, " ").replace(/\^\{?2\}?/g, "²").replace(/ {2,}/g, " ");
+const limpio = s => String(s).replace(/\\times/g, "×").replace(/\\text\{([^}]*)\}/g, "$1").replace(/\\[()\[\]]/g, "").replace(/\\,/g, " ").replace(/\^\{?2\}?/g, "²").replace(/ {2,}/g, " ");
 const num = n => Number(n).toLocaleString(EN ? "en-GB" : "es-ES", {maximumFractionDigits: 1});
 const dormir = ms => new Promise(r => setTimeout(r, ms));
 const seg = ms => ms == null ? "" : ms < 1000 ? `${ms} ms` : `${num(ms / 1000)} s`;

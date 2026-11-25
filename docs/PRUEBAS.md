@@ -2,12 +2,12 @@
 
 Generado por `python pruebas.py`. Se ejecutan también en GitHub Actions en cada cambio.
 
-**98 tests pasan.**
+**116 tests pasan.**
 
 | Proyecto | Pasan | Saltados |
 |---|---|---|
 | agente | 48 | 0 |
-| vivo | 11 | 0 |
+| vivo | 29 | 0 |
 | rag-real | 9 | 0 |
 | mcp-hub | 18 | 0 |
 | chat-analista | 5 | 0 |
@@ -23,6 +23,7 @@ Generado por `python pruebas.py`. Se ejecutan también en GitHub Actions en cada
 | [`agente/test_integracion.py`](../agente/test_integracion.py) | Integración con el índice real (normas descargadas). Se salta si no se ha ejecutado ingesta.py. |
 | [`agente/test_metricas.py`](../agente/test_metricas.py) | Tests de las métricas y del informe, con casos de resultado conocido. |
 | [`vivo/test_servidor.py`](../vivo/test_servidor.py) | Seguridad y contrato del servidor local, sin modelos: se levanta en un puerto libre. |
+| [`vivo/test_web.py`](../vivo/test_web.py) | La web no tiene enlaces rotos: recursos locales, datos que se cargan, pestañas y redirecciones antiguas. |
 | [`rag-real/test_rag.py`](../rag-real/test_rag.py) | Tests sin modelos: corpus coherente, fusión, validación de citas y corrección de respuestas. |
 | [`mcp-hub/tests/test_conocimiento.py`](../mcp-hub/tests/test_conocimiento.py) | RAG pequeño (capa 2): con textos inventados. |
 | [`mcp-hub/tests/test_incertidumbre.py`](../mcp-hub/tests/test_incertidumbre.py) | Motor de incertidumbre (motores/nucleo_mcp/incertidumbre.py) frente a casos con solución exacta. |

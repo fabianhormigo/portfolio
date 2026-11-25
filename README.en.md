@@ -2,36 +2,35 @@
 
 [Español](README.md)
 
-## ▶ [View the portfolio](https://fabianhormigo.github.io/portfolio/en/) · [Runnable demos](https://fabianhormigo.github.io/portfolio/en/vivo.html)
+## ▶ [View the portfolio](https://fabianhormigo.github.io/portfolio/en/)
 
-I solve problems with AI and automation, and prove it works.
+AI and data products you can use and verify.
 
-| Problem | Solution | Code |
+| Product | What it solves | Code |
 |---|---|---|
-| A small model cannot read a whole law | **Research agent** with context engineering over 7 official laws | [`agente`](agente) |
-| AI answers from the wrong document version | RAG with filtering, verbatim quotes and evaluation | [`rag-real`](rag-real) |
-| The model guesses when it should compute | MCP server with tested tools | [`mcp-hub`](mcp-hub) |
-| Nobody can question the data | Chat with precomputed figures and validated actions | [`chat-analista`](chat-analista) |
-| Integrations with duplicates and silent failures | Idempotent ETL with retries | [`etl-idempotente`](etl-idempotente) |
+| [Regulation research agent](https://fabianhormigo.github.io/portfolio/en/index.html#agente) | Answers over 7 official laws with article-and-page citations | [`agente`](agente) |
+| [Public procurement dashboard](https://fabianhormigo.github.io/portfolio/en/index.html#licitaciones) | Where the money is and where competition is low | [`chat-analista`](chat-analista) |
+| [Sensor file checker](https://fabianhormigo.github.io/portfolio/en/index.html#datos) | Gaps, frozen values, spikes and a report | [`portfolio.js`](portfolio.js) |
+| [Tools for agents (MCP)](https://fabianhormigo.github.io/portfolio/en/index.html#herramientas) | The model looks up and computes with tested code | [`mcp-hub`](mcp-hub) |
 
-Built with AI assistance. Code and project docs are mostly in Spanish.
+Also: [`rag-real`](rag-real) (verbatim-quote RAG with evaluation) and [`etl-idempotente`](etl-idempotente) (duplicate-free integration).
 
 ## Quality
 [![tests](https://github.com/fabianhormigo/portfolio/actions/workflows/tests.yml/badge.svg)](https://github.com/fabianhormigo/portfolio/actions)
 
-[Agent evaluation](agente/docs/EVALUATION.md) · [Design decisions (Spanish)](agente/docs/DECISIONES.md) · [Tests (Spanish)](docs/PRUEBAS.md) · `python pruebas.py`
+[Metrics on the web](https://fabianhormigo.github.io/portfolio/en/index.html#calidad) · [Agent evaluation](agente/docs/EVALUATION.md) · [Design decisions (Spanish)](agente/docs/DECISIONES.md) · [Tests (Spanish)](docs/PRUEBAS.md) · `python pruebas.py`
 
-## Run it in the browser
-
-The "Live" page can download a small model (Qwen2.5, ~290 or ~880 MB, from huggingface.co) and run it with WebGPU. It covers documents and data; the agent needs the local server.
-
-## Run it live
-
-Requires [Ollama](https://ollama.com). Then open http://127.0.0.1:8800/en/vivo.html
+## Run it on your machine
+Requires [Ollama](https://ollama.com). Then open http://127.0.0.1:8800/en/index.html
 
 ```
 pip install -r requirements.txt
 ollama pull qwen2.5:7b-instruct
 ollama pull nomic-embed-text
+python agente/ingesta.py
 python vivo/servidor.py
 ```
+
+The document and data demos can also run inside the browser (WebGPU) by downloading a small model.
+
+Built with AI assistance.

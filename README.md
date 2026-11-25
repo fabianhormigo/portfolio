@@ -2,36 +2,35 @@
 
 [English](README.en.md)
 
-## ▶ [Ver el portfolio](https://fabianhormigo.github.io/portfolio/) · [Demos ejecutables](https://fabianhormigo.github.io/portfolio/vivo.html)
+## ▶ [Ver el portfolio](https://fabianhormigo.github.io/portfolio/)
 
-Resuelvo problemas con IA y automatización, y compruebo que funcionan.
+Productos de IA y datos que se pueden usar y comprobar.
 
-| Problema | Solución | Código |
+| Producto | Qué resuelve | Código |
 |---|---|---|
-| Un modelo pequeño no puede leer una ley entera | **Agente investigador** con ingeniería de contexto sobre 7 normas oficiales | [`agente`](agente) |
-| La IA responde desde la versión equivocada | RAG con filtro, cita literal y evaluación | [`rag-real`](rag-real) |
-| El modelo adivina cuando debería calcular | Servidor MCP con herramientas probadas | [`mcp-hub`](mcp-hub) |
-| Nadie puede preguntar a los datos | Chat con cifras calculadas y acciones validadas | [`chat-analista`](chat-analista) |
-| Integraciones con duplicados y fallos silenciosos | ETL idempotente con reintentos | [`etl-idempotente`](etl-idempotente) |
+| [Agente investigador de normativa](https://fabianhormigo.github.io/portfolio/index.html#agente) | Responde sobre 7 normas oficiales citando artículo y página | [`agente`](agente) |
+| [Panel de contratación pública](https://fabianhormigo.github.io/portfolio/index.html#licitaciones) | Dónde está el dinero y dónde se compite poco | [`chat-analista`](chat-analista) |
+| [Revisor de ficheros de sensores](https://fabianhormigo.github.io/portfolio/index.html#datos) | Huecos, valores congelados, picos e informe | [`portfolio.js`](portfolio.js) |
+| [Herramientas para agentes (MCP)](https://fabianhormigo.github.io/portfolio/index.html#herramientas) | El modelo consulta y calcula con código probado | [`mcp-hub`](mcp-hub) |
 
-Desarrollo asistido con IA.
+Además: [`rag-real`](rag-real) (RAG con cita literal y evaluación) y [`etl-idempotente`](etl-idempotente) (integración sin duplicados).
 
 ## Calidad
 [![tests](https://github.com/fabianhormigo/portfolio/actions/workflows/tests.yml/badge.svg)](https://github.com/fabianhormigo/portfolio/actions)
 
-[Evaluación del agente](agente/docs/EVALUACION.md) · [Decisiones y fallos](agente/docs/DECISIONES.md) · [Pruebas](docs/PRUEBAS.md) · `python pruebas.py`
+[Métricas en la web](https://fabianhormigo.github.io/portfolio/index.html#calidad) · [Evaluación del agente](agente/docs/EVALUACION.md) · [Decisiones y fallos](agente/docs/DECISIONES.md) · [Pruebas](docs/PRUEBAS.md) · `python pruebas.py`
 
-## Ejecutarlo en el navegador
-
-En la página «En vivo» se puede descargar un modelo pequeño (Qwen2.5, ~290 o ~880 MB, desde huggingface.co) y ejecutarlo con WebGPU. Cubre documentos y datos; el agente necesita el servidor local.
-
-## Ejecutarlo en vivo
-
-Necesita [Ollama](https://ollama.com). Después: http://127.0.0.1:8800/vivo.html
+## Ejecutarlo en tu equipo
+Necesita [Ollama](https://ollama.com). Después abre http://127.0.0.1:8800/
 
 ```
 pip install -r requirements.txt
 ollama pull qwen2.5:7b-instruct
 ollama pull nomic-embed-text
+python agente/ingesta.py
 python vivo/servidor.py
 ```
+
+Las demos de documentos y datos pueden ejecutarse también dentro del navegador (WebGPU), descargando un modelo pequeño.
+
+Desarrollo asistido con IA.
