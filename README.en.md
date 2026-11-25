@@ -2,6 +2,8 @@
 
 [Español](README.md)
 
+## ▶ [View the portfolio](https://fabianhormigo.github.io/ai-portfolio/en/) · [Runnable demos](https://fabianhormigo.github.io/ai-portfolio/en/vivo.html)
+
 I solve problems with AI and automation, and prove it works.
 
 | Problem | Solution | Code |
