@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-## ▶ [Ver el portfolio](https://fabianhormigo.github.io/ai-portfolio/) · [Demos ejecutables](https://fabianhormigo.github.io/ai-portfolio/vivo.html)
+## ▶ [Ver el portfolio](https://fabianhormigo.github.io/portfolio/) · [Demos ejecutables](https://fabianhormigo.github.io/portfolio/vivo.html)
 
 Resuelvo problemas con IA y automatización, y compruebo que funcionan.
 
